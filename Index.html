@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<title>Steve's Woodturning</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3schoolscss.css">
+<!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"-->
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover; 
+  background-image: url('../stevewebsitedraft/Steve.jpg); <!-- fix me e.g. steve.jpg url("https://images.unsplash.com/photo-1564462670440-725c000bcfe1.jpg"-->
+  <!-- background-color: #cccccc; -->
+  height: 500px;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#shop" class="w3-button w3-block w3-black">SHOP</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <img src="woodbanner.jpg" alt="wood" style="height:auto;max-width:100%;display:block; margin-left:auto; margin-right:auto">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">A Norfolk woodworker</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Steve's<br>Woodturning</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Norwich, Norfolk</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT STEVE</span></h5>
+    <p>Steve apprenticed as a carpenter a lifetime ago and has worked on projects big and small over the years but has specialised in woodturning.</p>
+    <p>He uses found and recycled wood to create items based on the feel of the wood.
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"I have to work with the wood to get a feel for it which shapes how it will turn out."</i></p>
+      <p>Woodworker: Steve P</p>
+    </div>
+	  <img src="Steve.jpg" alt="Woodworker" width="200" style="" class="w3-circle ">
+
+    <p><strong>Services:</strong> Woodturning - decorations, pots, vases, bowls made to order.</p>
+	    <p><strong>Materials:</strong> Hard wood, soft wood, reclaimed wood, resin.</p>
+    <p><strong>Timescale:</strong> Commissions are received, wood sourced, prepared and finished ready for postage in 10 working days.</p>
+  </div>
+</div>
+
+<!-- Shop Container -->
+<div class="w3-container" id="shop">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHAT WE MAKE</span></h5>
+  <p>All items are custom made and the final look would depend upon the wood used - e.g. polished or with new wood which will split and age for a more rustic look. Call for a chat or message and let us know what kind of thing you would be interested in.</p>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Decorations');" id="myLink">
+        <div class="w3-col s6 tablink">Tree Decoration</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Snowman');">
+        <div class="w3-col s6 tablink">Decorative Snowman</div>
+      </a>
+	        <a href="javascript:void(0)" onclick="openMenu(event, 'Pots');">
+        <div class="w3-col s6 tablink">Pots</div>
+      </a>
+    </div>
+
+    <div id="Decorations" class="w3-container menu w3-padding-48 w3-card">
+      <img src="tree.jpg" alt="wood" style="height:auto;max-width:100%;display:block; margin-left:auto; margin-right:auto">
+    </div>
+  <div id="Snowman" class="w3-container menu w3-padding-48 w3-card">
+      <img src="snowman.jpg" alt="wood" style="height:auto;max-width:100%;display:block; margin-left:auto; margin-right:auto">
+    </div>
+    <div id="Pots" class="w3-container menu w3-padding-48 w3-card">
+      <img src="pot.jpg" alt="wood" style="height:auto;max-width:100%;display:block; margin-left:auto; margin-right:auto">
+	
+    </div>  
+
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT US</span></h5>
+    <p>Find us on Facebook, Etsy or eBay</p>
+   
+    <p><span class="w3-tag">LINKS</span> We take any request large or small. Just send us a message.</p>
+ 
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer 
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>-->
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
